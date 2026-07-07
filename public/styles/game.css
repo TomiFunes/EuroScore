@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+/* =====================
+   CARD PRINCIPAL
+===================== */
+.card {
+  background: #121a23;
+  width: 380px;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+/* =====================
+   TITULO
+===================== */
+h1 {
+  margin: 0 0 15px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* =====================
+   TOP BAR
+===================== */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.score {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* =====================
+   SELECT DIFICULTAD
+===================== */
+select {
+  background: #1c2733;
+  color: #ffffff;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+/* =====================
+   LOGO
+===================== */
+.logo-wrapper {
+  background: #0e141b;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 15px 0;
+}
+
+.logo-wrapper img {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+}
+
+/* =====================
+   INPUT
+===================== */
+input {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+/* =====================
+   BOTON
+===================== */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  background: #1db954;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.1s ease;
+}
+
+button:hover {
+  background: #17a64a;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* =====================
+   RESULTADO
+===================== */
+.result {
+  font-size: 36px;
+  margin-top: 10px;
+  min-height: 44px;
+}
+
+.wrong {
+  font-size: 14px;
+  color: #ff7676;
+  margin-top: 5px;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 420px) {
+  .card {
+    width: 90%;
+  }
+}

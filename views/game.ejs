@@ -1,0 +1,30 @@
+<head>
+  <meta charset="UTF-8" />
+  <title>Home</title>
+  <link rel="stylesheet" href="/styles/game.css" />
+</head>
+<body>
+  <div class="card">
+    <h1>⚽ Guess the club</h1>
+
+    <div class="top-bar">
+      <select id="difficulty" onchange="startGame()">
+        <option value="easy">Medium</option>
+        <option value="medium">Hard</option>
+      </select>
+
+      <div class="score" id="score">Score: 0</div>
+    </div>
+
+    <div class="logo-wrapper">
+      <img id="logo" src="" alt="Club logo" />
+    </div>
+
+    <input type="text" id="answer" placeholder="Club name" />
+    <button onclick="checkAnswer()">Confirm</button>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <script src="/game.js"></script>
+</body>
