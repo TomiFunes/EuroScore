@@ -48,9 +48,6 @@ app.get('/guest', (req, res) => {
   });
 });
 
-  res.redirect('/game');
-});
-
 app.get("/game", (req, res) => {
   res.render("game");
 });
