@@ -21,6 +21,12 @@ A football badge guessing game built with Node.js, Express, PostgreSQL and EJS. 
 - HTML & CSS
 - TheSportsDB API
 
+## Live Demo 
+
+Landing:: https://euro-score.vercel.app/
+
+Game: https://euro-score.vercel.app/game
+
 ## Installation
 
 Clone the repository:
