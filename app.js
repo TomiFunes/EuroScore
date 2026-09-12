@@ -41,6 +41,11 @@ app.get("/", (req, res) => {
   res.render("index", { loginError: false });
 });
 
+app.get('/guest', (req, res) => {
+req.session.guest = true;
+res.redirect('/game');
+});
+
 app.get("/game", (req, res) => {
   res.render("game");
 });
