@@ -42,10 +42,11 @@ app.get("/", (req, res) => {
 });
 
 app.get('/guest', (req, res) => {
-  req.session.user = {
+  res.render('game', {
     username: 'Guest',
     guest: true
-  };
+  });
+});
 
   res.redirect('/game');
 });
