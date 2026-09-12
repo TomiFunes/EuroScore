@@ -42,7 +42,6 @@ app.get("/", (req, res) => {
 });
 
 app.get('/guest', (req, res) => {
-req.session.guest = true;
 res.redirect('/game');
 });
 
